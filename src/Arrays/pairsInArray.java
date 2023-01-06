@@ -8,13 +8,14 @@ public class pairsInArray {
                 System.out.print("("+arr[i]+" "+arr[j]+")");
                 pair_count++;
             }
+
             System.out.println();
         }
         System.out.println("total number of pairs= " +pair_count);
     }
 
     public static void main(String[] args) {
-        int array[]= {3,5,7,9,2,8,6,4,6,7};
+        int array[]= {3,5,7,9,2};
         pair(array);
     }
 }
