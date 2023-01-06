@@ -7,9 +7,9 @@ public class reverse_array {
         while (first<last){
             int temp= arr[last];
             arr[last]=arr[first];
-            arr[first]=temp;
-            first ++;
-            last--;
+            arr[first]=temp;                   //o(n/2)= o(n) : time complexity
+            first ++;                         // o(1)= space complexity for saving constants.
+            last--;            //other method could be reverse traversal but it would take o(n) space complexity
         }
 
     }
@@ -23,3 +23,5 @@ public class reverse_array {
         System.out.println();
     }
 }
+
+
