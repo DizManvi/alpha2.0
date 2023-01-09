@@ -12,7 +12,7 @@ public class binarysearch {
             if (key == arr[mid_ele]) { //middle element is the key
                 return mid_ele;
             }
-            else {
+            if (key < arr[mid_ele]) {
                 end = mid_ele - 1; //element is left side of the mid_ele
             }
         }
@@ -21,7 +21,7 @@ public class binarysearch {
 
     public static void main(String[] args) {
         int count[]={23,45,67,78,90};
-        int index= binary_search(count, 78);
+        int index= binary_search(count, 90);
         if(index==-1){
             System.out.println("Element not present");
         }

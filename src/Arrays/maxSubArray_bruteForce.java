@@ -1,8 +1,8 @@
 package Arrays;
 
-public class maxSubArray {
+public class maxSubArray_bruteForce {
     public static void subarray(int arr[]) {   //no of elements= n(n+1)/2
-        int curr_sum = 0;
+        int curr_sum = 0;   //time complexity is o(n^3) , bad time complexity
         int max_sum = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
             int start = i;
