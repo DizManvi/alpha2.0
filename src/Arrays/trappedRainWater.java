@@ -6,16 +6,17 @@ public class trappedRainWater {
         int h= height.length;
         int leftMax[] = new int[h];
         leftMax[0]= height[0];
-        for (int i=1 ; i<h; i++){
+        for (int i=1 ; i<h; i++){   //moves from left to right
             leftMax[i]= Math.max(height[i],leftMax[i-1]);
         }
         //declaring right max
 
         int rightMax[] = new int[height.length];
         rightMax[h-1]= height[h-1];
-        for (int i= h-2; i>=0; i--){
+        for (int i= h-2; i>=0; i--){   //moves from right to left
             rightMax[i]= Math.max(height[i], rightMax[i+1]);
         }
+        // calculating min of both maxes
         int trapped_water=0;
         for (int i=0; i<h; i++){
             int water_level = Math.min( leftMax[i], rightMax[i]);
