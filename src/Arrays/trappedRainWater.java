@@ -1,7 +1,7 @@
 package Arrays;
 import java.util.*;
 public class trappedRainWater {
-    public static int trappedrain( int height[]){
+    public static int trappedrain( int height[]){  // tc is O(height) i.e length of array "height"
         //declaring leftmax
         int h= height.length;
         int leftMax[] = new int[h];
